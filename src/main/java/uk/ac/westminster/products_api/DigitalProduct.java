@@ -1,0 +1,24 @@
+package uk.ac.westminster.products_api;
+
+public class DigitalProduct extends Product {
+    private String downloadUrl;
+    private Double fileSizeMB;
+
+    public DigitalProduct() {
+
+    }
+
+    public DigitalProduct(Long id, String name, double price, String downloadUrl, Double fileSizeMB) {
+        super(id, name, price);
+        this.downloadUrl = downloadUrl;
+        this.fileSizeMB = fileSizeMB;
+    }
+
+    public String getDownloadUrl() {
+        return downloadUrl;
+    }
+
+    public Double getFileSizeMB() {
+        return fileSizeMB;
+    }
+}
