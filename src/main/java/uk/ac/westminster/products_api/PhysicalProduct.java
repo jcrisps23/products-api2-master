@@ -2,11 +2,11 @@
 //2- A shop system might have a payment class and would not pass this test because its a non physical item.
 package uk.ac.westminster.products_api;
 
-public class PhysicalProduct extends Product{
+public class PhysicalProduct extends Product {
     private Double weightKg;
     private String dimensions;
 
-    public PhysicalProduct(){
+    public PhysicalProduct() {
 
     }
 
@@ -16,11 +16,11 @@ public class PhysicalProduct extends Product{
         this.dimensions = dimensions;
     }
 
-    public Double getWeightKg(){
+    public Double getWeightKg() {
         return weightKg;
     }
 
-    public String getDimensions(){
+    public String getDimensions() {
         return dimensions;
     }
 }
